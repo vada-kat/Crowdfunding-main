@@ -1,0 +1,239 @@
+body {
+  background-repeat: no-repeat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(241, 239, 239);
+  background-image: url(images/image-hero-desktop.jpg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20vh;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  display: none;
+}
+
+/* main section */
+
+.main {
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(241, 239, 239);
+  margin-left: 25%;
+  margin-top: 20%;
+  border-radius: 10px 10px 0 0;
+}
+.main p {
+  color: rgb(88, 85, 85);
+}
+.topic img {
+  margin-top: -30px;
+}
+.topic {
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+
+.bookmark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 15px 10%; */
+  margin: 5% 5%;
+}
+.bookmark button {
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  font-size: px;
+  border: none;
+}
+.back-this-project button {
+  background-color: rgb(11, 194, 197);
+  font-size: 18px;
+  color: white;
+}
+.part1 {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  background-color: rgb(219, 217, 217);
+  font-size: 20px;
+}
+.part1 img {
+  height: 35px;
+  margin-top: 2px;
+  background-color: rgb(142, 139, 139);
+  border-radius: 25px;
+}
+
+.part1 button {
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+.statics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 5% 0px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.last-part {
+  background-color: white;
+  border-radius: 10px;
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.same {
+  display: block;
+  border: 1px solid rgb(180, 176, 176);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 30px 0px;
+}
+.bamboo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bamboo span:last-child {
+  color: rgb(11, 194, 197);
+}
+
+.reward {
+  display: flex;
+  justify-content: space-between;
+}
+.reward span button:last-child {
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  font-size: px;
+  border: none;
+}
+
+.reward-last {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reward-last span:first-child {
+  color: rgb(194, 191, 191);
+}
+
+.reward-last span button {
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  font-size: px;
+  border: none;
+  background-color: rgb(191, 189, 189);
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(images/image-hero-mobile.jpg);
+    background-repeat: no-repeat;
+  }
+  header img {
+    margin-left: 0%;
+  }
+  .main {
+    height: 100vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100%;
+  }
+  .topnav {
+    display: none;
+  }
+  /* .topic{
+      width: 75%;
+    } */
+  .topic h3 {
+    font-size: 14px;
+  }
+
+  .statics {
+    display: block;
+  }
+
+  .back-this-project button {
+    font-size: 12px;
+  }
+
+  .part1 button {
+    display: none;
+  }
+  .bamboo {
+    display: block;
+  }
+  .bamboo .mahogany {
+    font-size: 14px;
+    color: rgb(78, 75, 75);
+  }
+  .reward {
+    display: block;
+  }
+  .reward-last {
+    display: block;
+  }
+}
+
+/* mobile phone size */
+@media (max-width: 375px) {
+  .main {
+    width: 80%;
+    margin-top: 145%;
+    margin-left: 10%;
+  }
+  .topic p {
+    font-size: 12px;
+  }
+  .topic img.mobile {
+    display: block;
+  }
+  .last-part h4 {
+    font-size: 12px;
+  }
+  .last-part p {
+    font-size: 8px;
+  }
+  .statics span h2 {
+    font-size: 14px;
+  }
+  .same {
+    margin: 10px;
+    padding: 5px;
+    width: 90%;
+  }
+}
+.bamboo span {
+  font-size: 12px;
+}
